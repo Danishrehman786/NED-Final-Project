@@ -3,7 +3,6 @@
 #include "MAX30100_PulseOximeter.h"
 #include <OneWire.h>
 #include <DallasTemperature.h>
-//include <dht.h>
 #include "DHT.h"
 
 
@@ -16,8 +15,8 @@ const int DHTPin = D5;
 float temperature, humidity, BPM, SpO2, bodytemperature;
 
 /*Put your SSID & Password*/
-const char* ssid = "The IoT Projects";  // Enter SSID here
-const char* password = "11122235122@kap";  //Enter Password here
+const char* ssid = "Health Monetering System";  // Enter SSID here
+const char* password = "Danish786";  //Enter Password here
 
 
 DHT dht(DHTPin, DHTTYPE); //--> Initialize DHT sensor, DHT dht(Pin_used, Type_of_DHT_Sensor);
@@ -154,8 +153,8 @@ String SendHTML(float temperature, float humidity, float BPM, float SpO2, float 
   ptr += "</style>";
   ptr += "</head>";
   ptr += "<body>";
-  ptr += "<h1>ESP8266/ESP32 Patient Health Monitoring</h1>";
-  ptr += "<h3>https://theiotprojects.com</a></h3>";
+  ptr += "<h1>Patient Health Monitoring System</h1>";
+  ptr += "<h3>Created by Danish Rehman</a></h3>";
   ptr += "<div class='container'>";
 
   ptr += "<div class='data temperature'>";
