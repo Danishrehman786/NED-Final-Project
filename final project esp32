@@ -12,11 +12,10 @@
  
 float temperature, humidity, BPM, SpO2, bodytemperature;
  
-/*Put your SSID & Password
+/*Put your SSID & Password*/
 const char* ssid = "Health Monetering system";  // Enter SSID here
-const char* password = "Danish786";  //Enter Password here */
-char ssid[]= "YOUR_SSID";      // this is changed
-const char* password  = "YOUR_PASSWORD"; 
+const char* password = "Danish786";  //Enter Password here 
+
  
 dht DHT;
 PulseOximeter pox;
@@ -150,8 +149,8 @@ void handle_NotFound(){
   ptr +="</style>";
   ptr +="</head>";
   ptr +="<body>";
-  ptr +="<h1>ESP8266/ESP32 Patient Health Monitoring</h1>";
-  ptr +="<h3>https://theiotprojects.com</h3>";
+  ptr +="<h1>ESP32 Patient Health Monitoring</h1>";
+  ptr +="<h3>Created by Danish Rehman</h3>";
   ptr +="<div class='container'>";
   
   ptr +="<div class='data temperature'>";
